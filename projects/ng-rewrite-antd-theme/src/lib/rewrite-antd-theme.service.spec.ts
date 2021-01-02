@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgRewriteAntdThemeService } from './ng-rewrite-antd-theme.service';
+import { RewriteAntdThemeService } from './rewrite-antd-theme.service';
 
 describe('NgRewriteAntdThemeService', () => {
-  let service: NgRewriteAntdThemeService;
+  let service: RewriteAntdThemeService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgRewriteAntdThemeService);
+    service = TestBed.inject(RewriteAntdThemeService);
   });
 
   it('should be created', () => {

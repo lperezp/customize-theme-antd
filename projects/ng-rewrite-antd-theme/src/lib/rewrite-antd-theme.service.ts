@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class NgRewriteAntdThemeService {
+export class RewriteAntdThemeService {
   lessLoaded = false;
   constructor() {}
 
@@ -24,12 +24,12 @@ export class NgRewriteAntdThemeService {
         .then(() => {
           console.info('Change successful');
         })
-        .error(() => {
-          console.error('Change failed');
+        .catch((error: any) => {
+          console.error('Change failed', error);
         });
     };
 
-    const lessUrl = './assets/less.min.js';
+    const lessUrl = './../assets/less.min.js';
 
     if (this.lessLoaded) {
       changeColor();
