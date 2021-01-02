@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-rewrite-antd-theme": {
+      "projectType": "library",
+      "root": "projects/ng-rewrite-antd-theme",
+      "sourceRoot": "projects/ng-rewrite-antd-theme/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-rewrite-antd-theme/tsconfig.lib.json",
+            "project": "projects/ng-rewrite-antd-theme/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-rewrite-antd-theme/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-rewrite-antd-theme/src/test.ts",
+            "tsConfig": "projects/ng-rewrite-antd-theme/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-rewrite-antd-theme/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-rewrite-antd-theme/tsconfig.lib.json",
+              "projects/ng-rewrite-antd-theme/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-rewrite-antd-theme"
 }
