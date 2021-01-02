@@ -1,17 +1,35 @@
 {
   "name": "ng-rewrite-antd-theme",
+  "version": "1.0.0",
   "description": "Library for projects in Angular to have a dynamic theme in Ng-Zorro.",
   "author": {
     "name": "Luis Eduardo <@lperezp>",
     "email": "luiseperezp.10@gmail.com",
     "url": "https://lperezp.dev"
   },
-  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^11.0.5",
     "@angular/core": "^11.0.5"
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "keywords": [
+    "javascript",
+    "npm",
+    "package",
+    "module",
+    "funny",
+    "commits",
+    "messages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lperezp/customize-theme-antd.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lperezp/customize-theme-antd/issues"
+  },
+  "homepage": "https://github.com/lperezp/customize-theme-antd/blob/main/projects/ng-rewrite-antd-theme/#readme"
 }
