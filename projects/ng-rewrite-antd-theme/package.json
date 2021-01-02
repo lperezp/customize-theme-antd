@@ -1,5 +1,11 @@
 {
   "name": "ng-rewrite-antd-theme",
+  "description": "Library for projects in Angular to have a dynamic theme in Ng-Zorro.",
+  "author": {
+    "name": "Luis Eduardo <@lperezp>",
+    "email": "luiseperezp.10@gmail.com",
+    "url": "https://lperezp.dev"
+  },
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^11.0.5",
